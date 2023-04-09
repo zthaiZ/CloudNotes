@@ -303,6 +303,7 @@ It costs less to setup your own load balancer but it will be a lot more effort o
 * 5xx errors are application induced errors
     * Load balancer Errors 503 means at capacity or no registered target
 * If the LB can’t connect to your application, check your security
+* Server Name Indication (SNI) allows you to expose multiple HTTPS applications each with its own SSL certificate on the same listener
 
 ------------------------------------------
 
