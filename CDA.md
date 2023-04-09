@@ -358,6 +358,7 @@ The goal of an Auto Scaling Group (ASG) is to:
 * ASG are free. You pay for the underlying resources being launched
 * Having instances under an ASG means that if they get terminated for whatever reason, the ASG will restart them. Extra safety
 * ASG can terminate instances marked as unhealthy by an LB (and hence replace them)
+* For each Auto Scaling Group, there's a Cooldown Period after each scaling activity. In this period, the ASG doesn't launch or terminate EC2 instances. This gives time to metrics to stabilize. The default value for the Cooldown Period is 300 seconds (5 minutes).
 
 ------------------------------------------
 
